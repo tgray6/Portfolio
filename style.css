@@ -4,8 +4,378 @@
           box-sizing: border-box;
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+}
 
-body{
-  background-color: black;
+body {
+  font-family: "Oswald', sans-serif",
+  sans-serif; 
+  font-size: 20px;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+  padding-top: 183.59px;
+  margin: 0;
+  padding-bottom: 100px;
+}
+
+
+
+/*Responsive Hamburgber Navbar-Includes Named Header and UL*/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: #101010;
+}
+
+
+header {
+  width: 100%;
+  text-align: center;
+  background: #101010;
+  color: gray;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.headerName {
+	font-size: 25px;
+}
+
+.headerName:hover {
+	cursor: pointer;
+}
+
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   color: white;
+  background-color: #101010;
+  text-align: center;
+  transition: max-height 0.4s;
+}
+
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+  transition: all ease-in-out 250ms;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+
+nav ul li:hover {
+  background: #ab0805;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.hide {
+  background: black;
+  padding: 16px;
+  color: white;
+  cursor: pointer;
+  font-size: 22px;
+  display: none;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.05); }
+
+
+@media screen and (max-width:680px) {
+
+	.headerName {
+  		font-size: 20px;
+	}
+
+	nav ul li {
+  		width: 100%;
+ 		padding: 15px;
+  		border-radius: 0px;
+	}
+
+	.show {
+  		max-height: 20em;
+	}
+
+	.hide {
+  		display: block;
+	}
+
+	nav ul {
+ 		max-height: 0;
+	}
+
+/*end responsive navbar media query, begin other sections for 680px*/
+	.homepageHeader {
+		font-size: 25px;
+	}
+
+	.hero {
+		width: 50%;
+		height: 50%;
+	}
+
+	.bioDiv p {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.portfolioDiv p {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+/*	.portfolioDiv {
+		text-align: left;
+	}*/
+}
+
+
+/*End Responsive Navbar*/
+
+@media screen and (min-width:680px) {
+
+	.bioDiv p {
+		padding-left: 25%;
+		padding-right: 25%;
+	}
+
+	.portfolioDiv p {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+
+	.portfolioDiv {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+}
+
+@media screen and (max-width:980px) {
+
+	.portfolioDiv {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
+
+
+.container {
+  max-width: 1000px;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.flexItem {
+  width: 150px;
+  height: 150px;
+  font-size: 70px;
+  margin-bottom: 10px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.flexItem img {
+  margin-top: 15px;
+  margin-bottom: -10px;
+  width: 70px;
+  height: 70px;
+}
+
+.flexItem p {
+  font-size: 20px;
+  color: black;
+}
+
+.hidden{
+	display: none;
+}
+
+/*BIOGRAPHY*/
+h2 {
+	font-size: 30px; 
+}
+
+
+.bioDiv p {
+	text-align: left;
+	text-indent: 15px;
+}
+
+.hero {
+	border-radius: 50%;
+	border: 6px solid black;
+	margin-bottom: 20px;
+}
+
+p {
+	color: black
+}
+
+
+
+
+/*PORTFOLIO*/
+.bottom {
+	margin-bottom: 125px;
+}
+
+.portfolioDiv {
+	margin-top: 75px;
+}
+
+.portfolioDiv a {
+	text-decoration: none;
+	color: grey;
+	font-weight: bolder;
+}
+
+.portfolioDiv p {
+	color: white;
+}
+
+.portfolioDiv a:hover {
+	text-decoration: underline;
+}
+
+.max {
+	max-width: 800px;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+/*IMAGES*/
+.imp4gifimg, .gamebroimg, .giantbombimg, .quizimg, .heroesimg {
+	position: relative;
+/*	border: 4px solid #101010;*/
+	border-radius: 5px;
+	top: -30px;
+}
+
+.imp4gifimg {
+	border: 4px solid #5607bd;
+}
+
+.gamebroimg {
+	border: 4px solid red;
+}
+
+.giantbombimg {
+	border: 4px solid #ff3503;
+}
+
+.quizimg {
+	border: 4px solid #AE9B32;
+}
+
+.heroesimg {
+	border: 4px solid rgb(38, 38, 38);
+}
+/*END IMAGES*/
+
+
+
+
+/*SEPARATE PROJECT DIVS*/
+.imp4gifDiv {
+	background-color: #101010;
+	border: 3px solid #5607bd;
+	padding-bottom: 20px;
+	box-shadow: 0 10px 20px #5607bd;
+}
+
+.gamebroDiv {
+	background-color: #101010;
+	border: 3px solid red;
+	padding-bottom: 20px;
+	box-shadow: 0 10px 20px red;
+}
+
+
+.giantbombDiv {
+	background-color: #101010;
+	border: 3px solid #ff3503;
+	padding-bottom: 20px;
+	box-shadow: 0 10px 20px #ff3503;
+}
+
+
+.quizDiv {
+	background-color: #101010;
+	border: 3px solid #AE9B32;
+	padding-bottom: 20px;
+	box-shadow: 0 10px 20px #AE9B32;
+}
+
+
+.heroesDiv {
+	background-color: #101010;
+	border: 3px solid rgb(38, 38, 38);
+	padding-bottom: 20px;
+	box-shadow: 0 10px 20px rgb(38, 38, 38);
+}
+/*END PORTFOLIO*/
+
+
+
+
+
+
+
+
+/*CONTACT*/
+.contactDiv{
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.contactDiv p a {
+	text-decoration: none;
+}
+
+.redFont{
+	color: #0077B5;
+	font-weight: bold;
+}
+
+
+
+
+
+/*footer section*/
+footer {
+  padding: 1% 0;
+  background-color: #101010;
+  position: absolute;
+  width:100%;
+  font-size: 15px;
+  bottom: 0;
+  left: 0;
+  text-align: center;
 }

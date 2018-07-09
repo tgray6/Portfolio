@@ -7,23 +7,173 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 
 <body>
 <main role="main">
 
+	<nav>
+		<header>
+        	<h1 class="grow headerName">TYLER GRAY</h1>
+		</header>
+      	<ul>
+			<li class="grow homeButton"><a href="#">Home</a></li>
+			<li class="grow bioButton"><a href="#">Bio</a></li>
+			<li class="grow portfolioButton"><a href="#">Portfolio</a></li>
+			<li class="grow"> <a href="https://github.com/tgray6" target="_blank">Github</a></li>
+			<li class="grow"> <a href="https://www.linkedin.com/in/tyler-gray-1a7498b5/" target="_blank">LinkedIn</a></li>
+			<li class="grow contactButton"><a href="#">Contact</a></li>
+		</ul>
+		<div class="hide">
+			<i class="fa fa-bars" aria-hidden="true"></i> Menu
+		</div>
+	</nav>
+
+	
+    <div class="homepage" role="banner">
+        <h2 class="homepageHeader">I'm Tyler, full stack developer based in St. Petersburg, FL.</h2>
+        <p>Current Skillset:</p>
+        <div class="container">
+        	<div class="flexItem">
+        		<i class="fab fa-js-square" style="color: orange"></i>
+        		<p>Javascript</p>
+        	</div>
+        	<div class="flexItem">
+        		<i class="fab fa-html5" style="color: Tomato"></i>
+        		<p>HTML5</p>
+        	</div>
+        	<div class="flexItem">
+        		<img src="images/css.png">
+        		<p>CSS</p>
+        	</div>
+        	<div class="flexItem">
+        		<img src="images/jquery.png">
+        		<p>jQuery</p>
+        	</div>
+        	<div class="flexItem">
+        		<i class="fab fa-node" style="color: Green"></i>
+        		<p>Node.js</p>
+        	</div>
+        	<div class="flexItem">
+        		<img src="images/express.png">
+        		<p>Express</p>
+        	</div>
+        	<div class="flexItem">
+        		<img src="images/mongo.png"><p>MongoDB</p>
+        	</div>
+        	<div class="flexItem">
+        		<img src="images/mongoose.png">
+        		<p>Mongoose</p>
+        	</div>
+        	<div class="flexItem">
+        		<img src="images/chai.png">
+        		<p>Chai</p>
+        	</div>
+        	<div class="flexItem">
+        		<img src="images/mocha.png">
+        		<p>Mocha</p>
+        	</div>
+        	<div class="flexItem">
+        		<img src="images/passport.png">
+        		<p>Passport</p>
+        	</div>
+        	<div class="flexItem">
+        		<img src="images/react.png">
+        		<p>React</p>
+        	</div>
+        	<div class="flexItem">
+        		<img src="images/redux.png">
+        		<p>Redux</p>
+        	</div>
+        	<div class="flexItem">
+        		<img src="images/enzyme.png">
+        		<p>Enzyme</p>
+        	</div>
+        	<div class="flexItem">
+        		<img src="images/heroku.png">
+        		<p>Heroku</p>
+        	</div>
+        	<div class="flexItem">
+        		<img src="images/travis.png">
+        		<p>Travis</p>
+        	</div>
+        </div>
+    </div>
 
 
+    <section>
+    	<div class="bioSection hidden">
+    		<h2>Bio</h2>
+    		<div class="bioDiv">
+    			<img class="grow hero" src="images/hero.png">
+    			<p>I am a web developer and recent graduate of the Full Stack Web Development Career Path bootcamp at Thinkful. I found my love of technology after building my first pc when I was 12. From then on, tech has been a lifelong hobby.
+    			</p>
+    			<p>The thrill of seeing my ideas and code come to life is very satisfying, almost as satisfying as finally fixing that broken code that’s had me banging my head on my desk. Once I experienced those moments, I was hooked on web development. Now, other hobbies have taken the backseat as I spend the majority of my time learning new libraries and frameworks, while simultaneously mastering the basics.
+    			</p>
+    		</div>
+    	</div>
+    </section>
 
-<div class="test">
- <p>Test</p>
-</div>
+
+    <section>
+    	<div class="contactSection hidden">
+    		<h2>Contact</h2>
+    		<div class="contactDiv">
+    			<p>Tyler Gray</p>
+    			<p>Call/Voicemail/Text:</p>
+    			<p>405-430-6242</p>
+    			<p>tylergrayx@gmail.com</p>
+    			<p>Connect with me on <a href="https://www.linkedin.com/in/tyler-gray-1a7498b5/" target="_blank"><span class="redFont">LinkedIn</span></a></p>
+    		</div>
+    	</div>
+    </section>
+
+    <section>
+    	<div class="portfolioSection hidden">
+    		<h2>Portfolio</h2>
+    		<div class="portfolioDiv">
+
+				<div class="bottom imp4gifDiv">
+					<img class="max grow imp4gifimg" src="images/imp4gif.png">
+					<p>imp4Gif was created with React using Redux/Thunk/Redux-Form to allow users to post an image, gif, mp4, or youtube link and comment on individual posts.</p>
+					<a target="_blank" href="https://github.com/tgray6/imp4gif">Github(Client)</a> | <a target="_blank" href="https://github.com/tgray6/imp4gif-api">Github(API)</a> | <a target="_blank" href="https://imp4gif.netlify.com/">Demo</a>
+				</div>
+
+				<div class="bottom gamebroDiv">
+					<img class="max grow gamebroimg" src="images/gamebro.png">
+					<p>GameBro ReViews was created with jQuery and express to allow users to post, score and edit a review.</p>
+					<a target="_blank" href="https://github.com/tgray6/GameBro-ReViews">Github</a> | <a target="_blank" href="https://lit-mesa-46383.herokuapp.com/">Demo</a>
+				</div>
+
+				<div class="bottom giantbombDiv">
+					<img class="max grow giantbombimg" src="images/giantbomb.png">
+					<p>GiantBomb GameFinder utilizes jQuery, Ajax, and the GiantBomb API to allow users to search the GiantBomb database for videogames and check out the review.</p>
+					<a target="_blank" href="https://github.com/tgray6/Giantbomb-Gamefinder">Github</a> | <a target="_blank" href="https://tgray6.github.io/Giantbomb-Gamefinder/">Demo</a>
+				</div>
+
+				<div class="bottom quizDiv">
+					<img class="max grow quizimg" src="images/quiz.png">
+					<p>This quiz application was built with html/css/javascript and jQuery to create a sleek design and entertaining user interface.</p>
+					<a target="_blank" href="https://github.com/tgray6/NINTENDO-QUIZ">Github</a> | <a target="_blank" href="https://tgray6.github.io/NINTENDO-QUIZ/">Demo</a>
+				</div>
+
+				<div class="bottom heroesDiv">
+					<img class="max grow heroesimg" src="images/heroes.png">
+					<p>A basic html/css/bootstrap jQuery, utilizing modal popups to display specific table information about each hero.</p>
+					<a target="_blank" href="https://github.com/tgray6/HEROES">Github</a> | <a target="_blank" href="https://tgray6.github.io/HEROES/">Demo</a>
+				</div>
+
+    		</div>
+    	</div>
+    </section>
 
 
-
-     
-</main>
+	</main>
+	<footer role="content-info">TYLERGRAYX@GMAIL.COM</footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
 <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
